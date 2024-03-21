@@ -1,10 +1,7 @@
-import React, { useEffect, useState } from 'react'
-import "./Index.css"
+import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 
 const User = () => {
-    const [input, setInput] = useState('')
-
     const userData = useSelector((state) => state.users)
 
     useEffect(() => {
@@ -12,7 +9,7 @@ const User = () => {
     }, [])
 
     return (
-        <div className=''>
+        <div>
             {userData?.user?.map((item, index) => (
                 <div key={index}>{item.name}</div>
             ))}

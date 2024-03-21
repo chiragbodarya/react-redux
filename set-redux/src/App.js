@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import './App.css';
-import Index from './componet/Index';
 import { useDispatch } from 'react-redux';
 import { getUser } from './store/actions/userActions';
 import User from './componet/User';
